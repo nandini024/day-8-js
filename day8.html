@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(msg)
+        {
+            console.log(msg)
+        }
+    fun("hello")
+//     Task 2: Sum Function
+// Scenario: Create a function that takes two numbers as arguments and
+//  returns their sum.
+function sum(a,b){
+    console.log(a+b)
+}
+sum(5,6)
+sum(6,7)
+// Task 3: Square Function
+// Scenario: Create a function that takes a number as an argument
+//  and returns its square.
+function square(num)
+{
+s=num*num
+console.log(s)
+}
+square(5)
+
+
+// Task 4: Average Function
+// Scenario: Create a function that takes an array of numbers 
+// as an argument and returns the average.
+// Task:
+// hint:[2,5,2] =9/3=3
+// Define a function average that takes one parameter arr.
+// The function should return the average of the numbers in arr.
+// Call the function with different arrays and print the results.
+
+
+function avg(n1,n2,n3)
+{
+    avg=(n1+n2+n3)/3
+    console.log(avg)
+}
+avg(4,4,4)
+
+
+// Task 5:  Vowels Function
+// Scenario: Create a function that takes a string as an argument and 
+// returns weather the strings contains vowels or not .
+// Task:
+// Define a function that takes one parameter str.
+// The function should return whether string contains vowels or not.
+// use loops and if conditions
+// Call the function with different strings and print the results.
+// hello --a,e ,i ,o,u---it contains vowels
+// hll---it doesnt contains vowels
+
+function msg(ms)
+{
+    let str=['a','e','i','o','u']
+for(let i of str)
+{
+if(str.includes(i))
+{
+    console.log("it contains vowels")
+    
+}
+
+}
+
+console.log("it does not conatins vowel")
+}
+
+console.log(msg("hello"))
+console.log(msg("hyy"))
+
+
+// Task 6: Temperature Converter
+// Scenario: Create a function that converts temperatures between Celsius and Fahrenheit.
+// Task:
+// Define a function convertTemperature that takes two parameters: temp (the temperature) and
+//  scale (the scale to convert to, either “C” or “F”).
+// The function should return the converted temperature.
+// Test the function with different temperatures and scales and print the results.
+// Hints:-
+// formula for celscious (temp - 32) * 5/9
+// formula for fahrehnheit (temp * 9/5) + 32
+
+
+function tem(temp,scale){
+    if(scale=='F'){
+       console.log((temp-32)*5/9)
+      }
+  else if(scale=='C')
+  {
+    console.log ((temp * 9/5) + 32) 
+  }
+}
+console.log(tem(320,'C'))
+
+
+
+
+    </script>
+</body>
+</html>
